@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanksgiving 2024 🦃 | Konecny Family</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f5f0;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #8B4513;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #D2691E 0%, #8B4513 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Countdown Timer */
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+        }
+
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+        }
+
+        /* Weather Widget */
+        .weather-widget {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #8B4513;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #D2691E;
+        }
+
+        h3 {
+            color: #8B4513;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #f8f5f0;
+            font-weight: 600;
+            color: #8B4513;
+        }
+
+        tr:hover {
+            background: #fafafa;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: #fff8e7;
+            border-left: 4px solid #D2691E;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .warning-box {
+            background: #fff4e6;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        /* Schedule Grid */
+        .schedule-day {
+            background: #f8f5f0;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .schedule-day h3 {
+            margin-top: 0;
+        }
+
+        .time-slot {
+            display: flex;
+            gap: 1rem;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+        }
+
+        .time {
+            font-weight: 600;
+            color: #8B4513;
+            min-width: 120px;
+        }
+
+        /* Footer */
+        footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 0.75rem;
+                font-size: 0.9rem;
+            }
+
+            #countdown {
+                gap: 1rem;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#guest-list">Guest List</a></li>
+            <li><a href="#house-guide">House Guide</a></li>
+            <li><a href="#sleeping">Sleeping</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#turkey-trot">Turkey Trot</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#local">Local Info</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>🦃 Thanksgiving 2024 🦃</h1>
+        <p>Konecny Family Gathering | Cabarrus County, NC</p>
+        
+        <!-- Countdown Timer -->
+        <div id="countdown">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">0</span>
+                <span class="countdown-label">Days</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">0</span>
+                <span class="countdown-label">Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">0</span>
+                <span class="countdown-label">Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">0</span>
+                <span class="countdown-label">Seconds</span>
+            </div>
+        </div>
+
+        <!-- Weather Widget -->
+        <div class="weather-widget">
+            <h3>📍 Cabarrus County Weather</h3>
+            <p>Check the forecast: <a href="https://weather.com/weather/tenday/l/Concord+NC" target="_blank" style="color: white; text-decoration: underline;">10-Day Forecast</a></p>
+            <p style="opacity: 0.9; margin-top: 0.5rem;">Late November temps typically 40s-60s°F</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h2>Welcome!</h2>
+            <p>We are so excited to host everyone for Thanksgiving this year! This page has everything you need to know about your stay - from house details and sleeping arrangements to the full menu and schedule.</p>
+            <p>Feel free to scroll through or use the navigation at the top to jump to specific sections.</p>
+            
+            <div class="info-box">
+                <strong>📱 Save this page:</strong> Bookmark it on your phone for easy access during your visit!
+            </div>
+        </section>
+
+        <!-- Guest List & Contact Info -->
+        <section id="guest-list">
+            <h2>Guest List & Contact Info</h2>
+            
+            <h3>The Konecny Family (Hosts)</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Cell Phone</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Chris Konecny</td>
+                    <td>[YOUR NUMBER]</td>
+                    <td>Host</td>
+                </tr>
+                <tr>
+                    <td>[Your Wife's Name]</td>
+                    <td>[HER NUMBER]</td>
+                    <td>Host</td>
+                </tr>
+                <tr>
+                    <td>Greta (17)</td>
+                    <td>-</td>
+                    <td>Daughter</td>
+                </tr>
+                <tr>
+                    <td>Sofia (15)</td>
+                    <td>-</td>
+                    <td>Daughter</td>
+                </tr>
+            </table>
+
+            <h3>From Cincinnati</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Cell Phone</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                </tr>
+                <tr>
+                    <td>[Dad's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Mom's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+            </table>
+
+            <h3>From Minneapolis</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Cell Phone</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                </tr>
+                <tr>
+                    <td>[Sister's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Brother-in-law's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Kid 1 Name]</td>
+                    <td>-</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Kid 2 Name]</td>
+                    <td>-</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Kid 3 Name]</td>
+                    <td>-</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+            </table>
+
+            <h3>From Atlanta</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Cell Phone</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                </tr>
+                <tr>
+                    <td>[Sister's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Brother-in-law's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Kid 1 Name]</td>
+                    <td>-</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Kid 2 Name]</td>
+                    <td>-</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Kid 3 Name]</td>
+                    <td>-</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+            </table>
+
+            <h3>Wife's Family</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Cell Phone</th>
+                    <th>Arrival</th>
+                    <th>Departure</th>
+                </tr>
+                <tr>
+                    <td>[Father-in-law's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+                <tr>
+                    <td>[Brother-in-law's Name]</td>
+                    <td>[NUMBER]</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <strong>📍 Our Address:</strong><br>
+                [Your Full Address]<br>
+                [City, State ZIP]<br>
+                <a href="[GOOGLE MAPS LINK]" target="_blank">Open in Google Maps</a>
+            </div>
+        </section>
+
+        <!-- House Guide -->
+        <section id="house-guide">
+            <h2>House Guide - Everything You Need to Know</h2>
+
+            <h3>☕ Kitchen & Food</h3>
+            <ul>
+                <li><strong>Coffee Maker:</strong> Located on kitchen counter. Coffee and filters in cabinet above.</li>
+                <li><strong>Microwave:</strong> Main kitchen microwave + additional microwave in garage for reheating</li>
+                <li><strong>Drinks:</strong> Help yourself! Main fridge + beverage fridge in garage. We'll stock water, sodas, beer, and wine.</li>
+                <li><strong>Dishwasher:</strong> Feel free to run it as needed. Detergent pods under the sink.</li>
+                <li><strong>Dishes & Serving:</strong> Main dishes in cabinets by dishwasher. Serving platters in pantry.</li>
+                <li><strong>Snacks:</strong> Pantry is stocked - help yourself to anything!</li>
+                <li><strong>Trash/Recycling:</strong> Kitchen trash, recycling in garage</li>
+            </ul>
+
+            <h3>🏠 House Basics</h3>
+            <ul>
+                <li><strong>WiFi Network:</strong> [NETWORK NAME]</li>
+                <li><strong>WiFi Password:</strong> [PASSWORD]</li>
+                <li><strong>Thermostat:</strong> Set to comfortable temp, but let us know if you'd like adjustments</li>
+                <li><strong>Door Locks:</strong> Front door has keypad - code is [CODE]</li>
+                <li><strong>Washer/Dryer:</strong> Upstairs laundry room - feel free to use. Detergent provided.</li>
+                <li><strong>Extra Towels/Linens:</strong> Linen closet upstairs in hallway</li>
+                <li><strong>Parking:</strong> Plenty of room in driveway and in front of house</li>
+            </ul>
+
+            <h3>🐕 Meet Our Dogs</h3>
+            <ul>
+                <li><strong>Names:</strong> [Dog 1 Name] and [Dog 2 Name]</li>
+                <li><strong>Temperament:</strong> Friendly and used to visitors!</li>
+                <li><strong>Feeding:</strong> We'll handle their feeding schedule</li>
+                <li><strong>Notes:</strong> They may be curious about new guests but are well-behaved. Let us know if you have any concerns.</li>
+            </ul>
+
+            <h3>📺 Entertainment</h3>
+            <ul>
+                <li><strong>Main TV:</strong> Large living room TV downstairs - streaming apps available</li>
+                <li><strong>Back Patio TV:</strong> Great for watching football outside by the fire pit</li>
+                <li><strong>Upstairs TV:</strong> Family room TV with gaming consoles</li>
+                <li><strong>Streaming Services:</strong> Netflix, Amazon Prime, Disney+, ESPN+, YouTube TV</li>
+                <li><strong>Board Games:</strong> Closet in upstairs family room</li>
+            </ul>
+
+            <h3>🔥 Outdoor Spaces</h3>
+            <ul>
+                <li><strong>Back Porch:</strong> Table seats 8, smokeless fire pit, additional seating area</li>
+                <li><strong>Front Porch:</strong> Rocking chairs and seating</li>
+                <li><strong>Backyard:</strong> Large grassy area - 10 acres to explore</li>
+                <li><strong>Walking:</strong> Neighborhood is hilly but nice for walks</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ Note about Office Above Garage:</strong> If sleeping in the office, you'll need to come downstairs to use the half bathroom in the main living area.
+            </div>
+        </section>
+
+        <!-- Sleeping Arrangements -->
+        <section id="sleeping">
+            <h2>Sleeping Arrangements</h2>
+            <p>We have 6 bedrooms and plenty of space! Each adult family group gets their own room.</p>
+
+            <h3>Downstairs</h3>
+            <table>
+                <tr>
+                    <th>Room</th>
+                    <th>Bed</th>
+                    <th>Bathroom</th>
+                    <th>Assigned To</th>
+                </tr>
+                <tr>
+                    <td>Master Bedroom</td>
+                    <td>King</td>
+                    <td>Private ensuite</td>
+                    <td>Chris & [Wife]</td>
+                </tr>
+            </table>
+
+            <h3>Upstairs</h3>
+            <table>
+                <tr>
+                    <th>Room</th>
+                    <th>Bed</th>
+                    <th>Bathroom</th>
+                    <th>Assigned To</th>
+                </tr>
+                <tr>
+                    <td>Greta's Room</td>
+                    <td>Full</td>
+                    <td>Private ensuite</td>
+                    <td>[FAMILY NAME]</td>
+                </tr>
+                <tr>
+                    <td>Sofia's Room</td>
+                    <td>Full</td>
+                    <td>Shared hall bathroom</td>
+                    <td>[FAMILY NAME]</td>
+                </tr>
+                <tr>
+                    <td>Extra Bedroom</td>
+                    <td>Queen</td>
+                    <td>Shared hall bathroom</td>
+                    <td>[FAMILY NAME]</td>
+                </tr>
+                <tr>
+                    <td>Large Playroom</td>
+                    <td>Sectional couch + air mattresses</td>
+                    <td>Shared hall bathroom</td>
+                    <td>Kids/Teens (Minneapolis family)</td>
+                </tr>
+            </table>
+
+            <h3>Office Above Garage</h3>
+            <table>
+                <tr>
+                    <th>Room</th>
+                    <th>Bed</th>
+                    <th>Bathroom</th>
+                    <th>Assigned To</th>
+                </tr>
+                <tr>
+                    <td>Office Space</td>
+                    <td>Air mattresses</td>
+                    <td>Half bath downstairs</td>
+                    <td>[FAMILY NAME] kids</td>
+                </tr>
+            </table>
+
+            <div class="info-box">
+                <strong>Bathroom Breakdown:</strong>
+                <ul>
+                    <li>Master bathroom (private)</li>
+                    <li>Greta's bathroom (private)</li>
+                    <li>Shared full bathroom upstairs (2-3 families sharing)</li>
+                    <li>Half bathroom downstairs (for office guests + general use)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Menu & Food Assignments -->
+        <section id="menu">
+            <h2>Menu & Food Assignments</h2>
+
+            <h3>🦃 The Menu</h3>
+            <div class="info-box">
+                <strong>What We're Providing:</strong>
+                <ul>
+                    <li>Two smoked turkeys</li>
+                    <li>Roast pork (picnic shoulder)</li>
+                    <li>Stuffing</li>
+                    <li>Mashed potatoes</li>
+                    <li>Gravy</li>
+                </ul>
+            </div>
+
+            <h3>Volunteer Sign-Up for Sides & Desserts</h3>
+            <p>We'd love your help with these! Let us know what you'd like to bring or make:</p>
+            
+            <table>
+                <tr>
+                    <th>Dish</th>
+                    <th>Volunteer</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Sweet Potato Casserole</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Green Beans</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Red Cabbage</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Cranberry Sauce</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Rolls/Bread</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Dessert #1</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Dessert #2</td>
+                    <td>TBD</td>
+                    <td>🔲 Needed</td>
+                </tr>
+                <tr>
+                    <td>Additional Sides</td>
+                    <td>TBD</td>
+                    <td>Open to ideas!</td>
+                </tr>
+            </table>
+
+            <h3>Dietary Restrictions & Allergies</h3>
+            <ul>
+                <li><strong>Gluten-Free:</strong> We will have GF options available</li>
+                <li>[ADD ANY REPORTED ALLERGIES OR RESTRICTIONS HERE]</li>
+            </ul>
+
+            <h3>Thursday Cooking Timeline</h3>
+            <div class="schedule-day">
+                <div class="time-slot">
+                    <span class="time">6:00 AM</span>
+                    <span>Turkeys go on smoker (Chris)</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">1:00 PM</span>
+                    <span>Start side dish prep</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">2:00 PM</span>
+                    <span>Turkeys come off smoker</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">3:00 PM</span>
+                    <span>Final cooking push</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">4:00 PM</span>
+                    <span><strong>DINNER TIME! 🦃</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Master Schedule -->
+        <section id="schedule">
+            <h2>Master Schedule</h2>
+
+            <div class="schedule-day">
+                <h3>📅 Wednesday, November 27</h3>
+                <div class="time-slot">
+                    <span class="time">All Day</span>
+                    <span>Arrivals throughout the day - text when you're close!</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">Evening</span>
+                    <span>Casual dinner (thinking pizza/easy meal), settle in, catch up</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <h3>🦃 Thursday, November 27 - THANKSGIVING</h3>
+                <div class="time-slot">
+                    <span class="time">6:00 AM</span>
+                    <span>Turkey goes on smoker</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">7:30 AM</span>
+                    <span><strong>Turkey Trot!</strong> Meet in driveway to carpool</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">10:00 AM</span>
+                    <span>Casual breakfast/brunch (bagels, fruit, coffee)</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">12:00 PM</span>
+                    <span>Football starts! 🏈</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">1:00 PM</span>
+                    <span>Cooking prep begins</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">4:00 PM</span>
+                    <span><strong>THANKSGIVING DINNER</strong></span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">Evening</span>
+                    <span>Game night, movies, fire pit, more football</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <h3>📅 Friday, November 28</h3>
+                <div class="time-slot">
+                    <span class="time">Morning</span>
+                    <span>Breakfast (leftovers or make your own)</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">All Day</span>
+                    <span>Optional: Hikes, shopping, relaxing, games</span>
+                </div>
+                <div class="time-slot">
+                    <span class="time">Evening</span>
+                    <span>Leftover feast or go out to eat (TBD)</span>
+                </div>
+            </div>
+
+            <div class="schedule-day">
+                <h3>📅 Saturday, November 29</h3>
+                <div class="time-slot">
+                    <span class="time">All Day</span>
+                    <span>Departures - safe travels home! 💙</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Turkey Trot -->
+        <section id="turkey-trot">
+            <h2>🏃 Turkey Trot 5K</h2>
+            
+            <div class="info-box">
+                <h3>Event Details</h3>
+                <ul>
+                    <li><strong>What:</strong> Thanksgiving morning 5K run/walk</li>
+                    <li><strong>When:</strong> Thursday, November 27 - Race starts at [TIME]</li>
+                    <li><strong>Where:</strong> [LOCATION/ADDRESS]</li>
+                    <li><strong>Distance:</strong> 5K (3.1 miles)</li>
+                    <li><strong>Registration:</strong> [LINK if needed, or "Day-of registration available"]</li>
+                    <li><strong>Cost:</strong> $[AMOUNT] or Free</li>
+                </ul>
+            </div>
+
+            <h3>Who's In?</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Running or Walking?</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Sofia</td>
+                    <td>Running</td>
+                    <td>✅ Confirmed</td>
+                </tr>
+                <tr>
+                    <td>Chris (maybe)</td>
+                    <td>TBD</td>
+                    <td>🤔 Thinking</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><em>Let us know if you're interested!</em></td>
+                </tr>
+            </table>
+
+            <h3>Logistics</h3>
+            <ul>
+                <li><strong>Meeting Plan:</strong> Gather in driveway at 7:30 AM to carpool together</li>
+                <li><strong>What to Bring:</strong> Comfortable running/walking clothes, water bottle</li>
+                <li><strong>Weather:</strong> Check forecast - could be 40s-60s</li>
+                <li><strong>Post-Race:</strong> Head back home for breakfast and football!</li>
+            </ul>
+        </section>
+
+        <!-- Activities -->
+        <section id="activities">
+            <h2>Activities & Things to Do</h2>
+
+            <h3>🥾 Outdoor Activities</h3>
+            <ul>
+                <li><strong>Hiking Trails Nearby:</strong>
+                    <ul>
+                        <li>[Trail Name] - [Distance] - [Difficulty] - [Link/Directions]</li>
+                        <li>[Trail Name] - [Distance] - [Difficulty] - [Link/Directions]</li>
+                    </ul>
+                </li>
+                <li><strong>Neighborhood Walks:</strong> Hilly but beautiful. Great for morning coffee walks.</li>
+                <li><strong>Backyard Exploration:</strong> 10 acres to roam!</li>
+            </ul>
+
+            <h3>🏠 At the House</h3>
+            <ul>
+                <li><strong>Fire Pit Evenings:</strong> S'mores supplies provided!</li>
+                <li><strong>Game Night:</strong> Board games in upstairs closet</li>
+                <li><strong>Movie Marathon:</strong> Thanksgiving classics or family favorites</li>
+                <li><strong>Football Watching:</strong> Multiple TVs for different games</li>
+                <li><strong>Kids' Activities:</strong> [Add any specific games, outdoor toys, etc.]</li>
+            </ul>
+
+            <h3>🛍️ Black Friday (Friday, Nov 28)</h3>
+            <ul>
+                <li><strong>Concord Mills:</strong> Large outlet mall about [X minutes] away</li>
+                <li><strong>Charlotte Shopping:</strong> [X minutes] to SouthPark Mall and other shopping</li>
+                <li><strong>Small Business Saturday:</strong> Local shops in [nearby town]</li>
+            </ul>
+
+            <h3>🍽️ Dining Out Options</h3>
+            <p>In case anyone wants to grab a meal out or coffee:</p>
+            <ul>
+                <li>[Restaurant Name] - [Type] - [Distance]</li>
+                <li>[Restaurant Name] - [Type] - [Distance]</li>
+                <li>[Coffee Shop] - Great coffee - [Distance]</li>
+            </ul>
+        </section>
+
+        <!-- Local Resources -->
+        <section id="local">
+            <h2>Local Resources & Emergency Info</h2>
+
+            <h3>🛒 Grocery Stores</h3>
+            <table>
+                <tr>
+                    <th>Store</th>
+                    <th>Distance</th>
+                    <th>Thanksgiving Hours</th>
+                </tr>
+                <tr>
+                    <td>Harris Teeter</td>
+                    <td>[X miles / X min]</td>
+                    <td>CLOSED Thanksgiving Day</td>
+                </tr>
+                <tr>
+                    <td>Food Lion</td>
+                    <td>[X miles / X min]</td>
+                    <td>CLOSED Thanksgiving Day</td>
+                </tr>
+                <tr>
+                    <td>Target</td>
+                    <td>[X miles / X min]</td>
+                    <td>CLOSED Thanksgiving Day</td>
+                </tr>
+            </table>
+
+            <h3>💊 Pharmacies</h3>
+            <ul>
+                <li><strong>CVS:</strong> [Address] - [Distance] - 24 hours or [Hours]</li>
+                <li><strong>Walgreens:</strong> [Address] - [Distance] - [Hours]</li>
+            </ul>
+
+            <h3>🏥 Medical</h3>
+            <ul>
+                <li><strong>Urgent Care:</strong> [Name & Address] - [Distance]</li>
+                <li><strong>Hospital:</strong> [Name & Address] - [Distance]</li>
+                <li><strong>Emergency:</strong> Always call 911</li>
+            </ul>
+
+            <h3>⛽ Gas Stations</h3>
+            <ul>
+                <li>[Name] - [Distance]</li>
+                <li>[Name] - [Distance]</li>
+            </ul>
+
+            <h3>💪 Gyms (Guest Day Passes)</h3>
+            <ul>
+                <li><strong>[Gym Name]:</strong> [Distance] - Guest passes available</li>
+            </ul>
+
+            <h3>☕ Coffee Shops</h3>
+            <ul>
+                <li>[Name] - [Distance] - Great for remote work or reading</li>
+                <li>[Name] - [Distance]</li>
+            </ul>
+
+            <div class="warning-box">
+                <h3>🚨 Emergency Contacts</h3>
+                <ul>
+                    <li><strong>Emergency Services:</strong> 911</li>
+                    <li><strong>Chris Cell:</strong> [YOUR NUMBER]</li>
+                    <li><strong>[Wife] Cell:</strong> [HER NUMBER]</li>
+                    <li><strong>Our Address:</strong> [Full Address for GPS]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>What should I pack?</h3>
+            <ul>
+                <li>Casual comfortable clothes</li>
+                <li>Layers (it can be chilly in the mornings/evenings)</li>
+                <li>Walking shoes if you want to hike</li>
+                <li>Any specialty toiletries you need</li>
+                <li>Medications</li>
+                <li>Phone chargers</li>
+            </ul>
+
+            <h3>What time should we arrive Wednesday?</h3>
+            <p>Arrive whenever works for you! Just text when you're getting close so we can be ready to welcome you.</p>
+
+            <h3>Should we bring anything?</h3>
+            <p>Just yourselves! If you want to volunteer for a side dish or dessert, check the menu section above. Feel free to bring any favorite beverages or snacks you'd like.</p>
+
+            <h3>What about allergies/dietary restrictions?</h3>
+            <p>We'll have GF options. Please let us know about any other restrictions ASAP.</p>
+
+            <h3>Can I help cook?</h3>
+            <p>Absolutely! We'd love the help, especially with side dishes. Most of you enjoy cooking, so this will be fun.</p>
+
+            <h3>Is there good cell service?</h3>
+            <p>Yes! All major carriers work well. WiFi is also excellent.</p>
+
+            <h3>What if I need to do some work?</h3>
+            <p>Plenty of quiet spaces and good WiFi. The office, bedrooms, or even coffee shops nearby work great.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>See you soon! Can't wait to spend Thanksgiving together! 🦃</p>
+        <p style="margin-top: 1rem; opacity: 0.8;">Questions? Text Chris at [YOUR NUMBER]</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Last updated: November 22, 2024</p>
+    </footer>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Set Thanksgiving date (November 27, 2025, 4:00 PM)
+        const thanksgivingDate = new Date('November 27, 2025 16:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = thanksgivingDate - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<div class="countdown-item"><span class="countdown-number">🦃</span><span class="countdown-label">It\'s Thanksgiving!</span></div>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days;
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('seconds').textContent = seconds;
+        }
+
+        // Update countdown every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
